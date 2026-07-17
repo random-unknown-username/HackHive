@@ -10,18 +10,16 @@ const GlitchText = ({ text, className }: { text: string; className?: string }) =
   return (
     <span className={`relative inline-block whitespace-nowrap ${className}`}>
       <motion.span
-        className="absolute left-0 text-red-500 opacity-80 mix-blend-screen pointer-events-none whitespace-nowrap"
-        style={{ top: '1.2px', marginLeft: '-1.2px' }}
-        animate={{ x: [-1.5, 1.2, -0.8, 0.8, 0], y: [-0.5, 0.5, 0] }}
-        transition={{ duration: 0.15, repeat: Infinity, repeatDelay: repeatDelays[0] }}
+        className="absolute top-[1px] left-0 -ml-[1px] text-red-500 opacity-50 mix-blend-screen pointer-events-none whitespace-nowrap"
+        animate={{ x: [-1, 1, 0], y: [0, 0, 0] }}
+        transition={{ duration: 0.1, repeat: Infinity, repeatDelay: repeatDelays[0] }}
       >
         {text}
       </motion.span>
       <motion.span
-        className="absolute left-0 text-blue-500 opacity-80 mix-blend-screen pointer-events-none whitespace-nowrap"
-        style={{ top: '-1.2px', marginLeft: '1.2px' }}
-        animate={{ x: [1.5, -1.2, 0.8, -0.8, 0], y: [0.5, -0.5, 0] }}
-        transition={{ duration: 0.15, repeat: Infinity, repeatDelay: repeatDelays[1] }}
+        className="absolute -top-[1px] left-0 ml-[1px] text-blue-500 opacity-50 mix-blend-screen pointer-events-none whitespace-nowrap"
+        animate={{ x: [1, -1, 0], y: [0, 0, 0] }}
+        transition={{ duration: 0.1, repeat: Infinity, repeatDelay: repeatDelays[1] }}
       >
         {text}
       </motion.span>
