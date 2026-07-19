@@ -13,7 +13,7 @@ const NAV_LINKS = [
   { label: 'Arcade', path: '/arcade' },
   { label: 'Projects', path: '/projects' },
   { label: 'About', path: '/about' },
-  { label: 'Announcements', path: '/announcements' },
+
   { label: 'FAQ', path: '/faq' },
 ] as const;
 

@@ -1,4 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
+
+const AnnouncementsPage: React.FC = () => {
+  return null; // announcements disabled
+};
+
+export default AnnouncementsPage;
+
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowUpRight, Clock, Tag, ChevronRight } from 'lucide-react';
 
